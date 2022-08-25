@@ -5,4 +5,97 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(201, 241, 228);
+  color: black;
+  margin: 1rem;
+}
+h1 {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 0.5rem;
+  background-color: rgb(206, 6, 6);
+  width: 20rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.header {
+  background-color: rgb(111, 212, 111);
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(85, 85, 122);
+  margin-bottom: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  transition: all 1s;
+}
+.navbar a:hover {
+  background-color: gray;
+  color: black;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+  justify-content: center;
+}
+.col {
+  padding: 1rem;
+}
+.fs {
+  background-color: gray;
+  /* width: 35%; */
+}
+.aws {
+  background-color: rgb(128, 113, 113);
+  /* width: 20%; */
+}
+.data {
+  background-color: rgb(70, 61, 61);
+  /* width: 30%; */
+}
+.cms {
+  background-color: rgb(136, 74, 74);
+  /* width: 15%; */
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    color: white;
+    background-color: rgb(221, 79, 79);
+  }
+  .row {
+    margin-bottom: 0.5rem;
+  }
+  .col {
+    width: 50%;
+    margin: 0.5rem 0rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  body {
+    background-color: purple;
+    color: black;
+  }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header {
+    display: none;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }
